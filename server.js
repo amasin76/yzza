@@ -29,6 +29,7 @@ client.on("message", (message) => {
 });
 
 //Auto Pinging
+/*
 let count = 0;
 setInterval(
   () =>
@@ -36,6 +37,6 @@ setInterval(
       console.log(`[${++count}] here i pinged ${process.env.URL}`)
     ),
   280000
-);
+);*/
 
 //
