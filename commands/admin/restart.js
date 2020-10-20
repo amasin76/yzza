@@ -1,5 +1,5 @@
 exports.run = async (client, message, args) => {
-        if (!message.member.hasPermission(["ADMINISTRATOR"])) {
+        if (message.author.id !== '484524591696576523') {
             return message.channel.send(`⛔ **Go play away! this cmd not for kids** ⛔`)
         }
         await message.channel.send(`✅Done`)
