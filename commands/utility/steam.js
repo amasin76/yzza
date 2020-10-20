@@ -216,8 +216,8 @@ exports.run = async (bot, message, args, emojis, settings) => {
                 })
             })
         }
-    }
 }
+
 
 exports.help = {
     name: "steam",
