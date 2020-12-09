@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
 
     const writer = receiver.pipe(fs.createWriteStream(`./recorded-${message.author.id}.pcm`));
     writer.on("finish", () => {
-        message.member.voice.channel.leave();
+        message.member.voice.channel.leave;
         message.channel.send("Finished writing audio");
     });
 
