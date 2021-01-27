@@ -45,7 +45,7 @@ client.on('guildMemberAdd', async member => {
         .setUsername(member.user.username)
         .setDiscriminator(member.user.discriminator)
         .setMemberCount(member.guild.memberCount)
-        .setGuildName(member.guild.name)
+        .setGuildName(/*member.guild.name*/"enable-pnpmThe Epics 💖")
         .setAvatar(member.user.displayAvatarURL({
             format: 'png'
         }))
@@ -69,7 +69,7 @@ client.on('guildMemberRemove', async member => {
         .setUsername(member.user.username)
         .setDiscriminator(member.user.discriminator)
         .setMemberCount(member.guild.memberCount)
-        .setGuildName(member.guild.name)
+        .setGuildName(/*member.guild.name*/"enable-pnpmThe Epics 💖")
         .setAvatar(member.user.displayAvatarURL({
             format: 'png'
         }))
