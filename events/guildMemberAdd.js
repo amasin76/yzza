@@ -10,12 +10,12 @@ module.exports = async (client, member) => {
   let number = randomInteger(100000, 1000000);
   // The number will be shuffled from the range 100K - 1M
   
-  let verifyChannel = member.guild.channels.cache.find(ch => ch.id === "727597528027234354");
+  let verifyChannel = member.guild.channels.cache.find(ch => ch.id === "717058723692019772");
   // Your Verification Text Channel.
   
   await db.set(`verification.${member.user.id}`, number);
   
-  const dm = new Discord.MessageEmbed()
+  /*const dm = new Discord.MessageEmbed()
   .setColor(0x7289DA)
   .setTitle(`Welcome to ${member.guild.name}!`)
   .setDescription("Hello! Before you get started, I just want you to verify yourself first.")
@@ -23,7 +23,7 @@ module.exports = async (client, member) => {
   await member.send(dm).catch(() => {
     verifyChannel.send(`<@!${member.user.id}> Hey, I guess your DM is locked. How about you unlock it first and type \`resend\` here.`)
     .then(i => i.delete({timeout: 10000}));
-  })
+  })*/
 }
 
 function randomInteger(min, max) {
