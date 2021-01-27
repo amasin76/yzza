@@ -1,4 +1,4 @@
-/*
+
 module.exports = async (client, member) => {
   const db = require("quick.db");
   const Discord = require("discord.js");
@@ -31,4 +31,3 @@ function randomInteger(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-*/
