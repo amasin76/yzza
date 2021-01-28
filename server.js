@@ -63,13 +63,13 @@ client.on('guildMemberAdd', async member => {
 
     member.guild.channels.cache.find(c => c.id === channel).send(attachment)
 })
-
+/*
 client.on('guildMemberRemove', async member => {
     let image = await leaveCanvas
         .setUsername(member.user.username)
         .setDiscriminator(member.user.discriminator)
         .setMemberCount(member.guild.memberCount)
-        .setGuildName(/*member.guild.name*/"  | THE EPICS |")
+        .setGuildName(member.guild.name"  | THE EPICS |")
         .setAvatar(member.user.displayAvatarURL({
             format: 'png'
         }))
@@ -87,7 +87,7 @@ client.on('guildMemberRemove', async member => {
 
     member.guild.channels.cache.find(c => c.id === channel).send(attachment)
 })
-
+*/
 client.on('message', async message => {
     if (message.content === "add") {
         client.emit('guildMemberAdd', message.member)
