@@ -10,7 +10,7 @@ module.exports = async client => {
         "صلوا على شفيع الأمة",
         `💖${client.users.cache.size} 𝙐𝙎𝙀𝙍𝙎💖`,
         "Javascript",
-        "V1.0",
+        "V1.1",
         "By | 7ANKALISS✨",
         `💖${client.users.cache.size} 𝙐𝙎𝙀𝙍𝙎💖`,
     ]
