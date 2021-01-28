@@ -126,7 +126,7 @@ client.on("guildMemberAdd", async member => {
         .setColor("#8015EA")
         //.setTimestamp()
 
-        const joinChannel = member.guild.channels.cache.find(channel => channel.id === "712769961004630171")
+        const joinChannel = member.guild.channels.cache.find(channel => channel.id === "717082044022390877")
         setTimeout(() => {
         if(joinChannel) {
             joinChannel.send(embed).catch(err => console.log(err))
