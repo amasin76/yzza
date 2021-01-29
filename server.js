@@ -137,6 +137,9 @@ client.on("guildMemberAdd", async member => {
     }
     catch(err) {console.log(err);}
 })
+//Join To Create==============
+const jointocreate = require("./jointocreate");
+jointocreate(client);
 
 
 //Auto Pinging
