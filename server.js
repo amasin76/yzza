@@ -22,7 +22,13 @@ client.package = require("./package.json");
 client.on("warn", console.warn); // This will warn you via logs if there was something wrong with your bot.
 client.on("error", console.error); // This will send you an error message via logs if there was something missing with your coding.
 client.login(process.env.SECRET).catch(console.error); // This token will leads to the .env file. It's safe in there.
+//mongoose===============================================
+const mongoose = require("mongoose");
 
+mongoose.connect('mongodb+srv://amasinos:k98KUFNr80TedFyJ@yzzabot.5uwt0.mongodb.net/Data', {
+    useUnifiedTopology : true,
+    useNewUrlParser : true,
+}).then(console.log('Connected to Mongo.db'))
 //DM Reverse==============================================
 client.on("message", (message) => {
             if (message.channel.type === "dm") {
