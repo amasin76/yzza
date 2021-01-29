@@ -129,7 +129,7 @@ client.on("guildMemberAdd", async member => {
         const embed = new MessageEmbed()
         //.setTitle(`Welcome to ${member.guild.name}`)
         //.setDescription(`Hello ${member}, you are our ${member.guild.memberCount}th member\nJoined using ${usedInvite.inviter/*.username*/}'s link\nNumber of uses: ${usedInvite.uses}\nInvite Link: ${usedInvite.url}`)
-        .setDescription(`✨**Welcome 💖${member}💖 in ${member.guild.name}**✨= \n ==✨**Invited by 💌 __${usedInvite.inviter.tag/*.username*/}'s__💌 Invite**`)
+        .setDescription(`✨ **Welcome 💖${member}💖 in ${member.guild.name}** \n✨ **Invited by 💌 __${usedInvite.inviter.tag/*.username*/}'s__ 💌 Invite**`)
         .setColor("#8015EA")
         .setFooter(`Account age: 📆 ● ${moment(member.user.createdTimestamp).format('LL')} ● ${moment(member.user.createdTimestamp).fromNow()} ●`)
         //.setTimestamp()
