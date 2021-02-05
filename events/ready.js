@@ -1,5 +1,5 @@
 
-module.exports = async client => {
+module.exports = async client.on => {
      console.log(`${client.user.username} im ready`)
     // bot.user.setActivity("Hello", {type: "STREAMING", url:"https://twitch.tv/Strandable"});
     let userIn = await client.users.cache.size;
