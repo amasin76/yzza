@@ -134,7 +134,7 @@ client.on("guildMemberAdd", async member => {
         .setFooter(`Account age: 📆 ● ${moment(member.user.createdTimestamp).format('LL')} ● ${moment(member.user.createdTimestamp).fromNow()} ●`)
         //.setTimestamp()
 
-        const joinChannel = member.guild.channels.cache.find(channel => channel.id === "717082044022390877" || "712769961004630171")
+        const joinChannel = member.guild.channels.cache.find(channel => channel.id === "717082044022390877")
         setTimeout(() => {
         if(joinChannel) {
             joinChannel.send(embed).catch(err => console.log(err))
