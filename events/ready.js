@@ -2,11 +2,7 @@
 module.exports = async client => {
      console.log(`${client.user.username} im ready`)
     // bot.user.setActivity("Hello", {type: "STREAMING", url:"https://twitch.tv/Strandable"});
-
-    
-
-    setInterval(function() {
-        let statuses = [
+     let statuses = [
         //`${client.guilds.size} servers!`,
         "8help",
         "💖THE EPICS💖",
@@ -17,6 +13,9 @@ module.exports = async client => {
         "By | 7ANKALISS✨",
         `💖${client.users.cache.size} 𝙐𝙎𝙀𝙍𝙎💖`,
     ]
+    
+
+    setInterval(function() {
         let status = statuses[Math.floor(Math.random() * statuses.length)];
         client.user.setActivity(status, {type: "WATCHING"});
 
