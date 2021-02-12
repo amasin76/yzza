@@ -1,6 +1,6 @@
 exports.run = async (client, message, args) => {
         if (message.author.id !== '484524591696576523') {
-            return message.channel.send(`⛔ **Go play away! this cmd not for kids** ⛔`)
+            return message.channel.send(`⛔ **Restarting the BOT! is only allowed for the Developer** ⛔`)
         }
         await message.channel.send(`✅Done`)
         console.log('Bot rebooting...');
