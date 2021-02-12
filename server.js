@@ -151,7 +151,7 @@ jointocreate(client);
 //Bot Mentioned=====================
 client.on('message', message=> {
     if (message.author.bot) return;
-    if (message.author.id == process.env.BOT_OWNER) return message.channel.send("**سمعـــــا و طاعـــــة**");
+    //if (message.author.id == process.env.BOT_OWNER) return message.channel.send("**سمعـــــا و طاعـــــة**");
     if (message.mentions.has(client.user))
     {
     message.reply("** Ta Hnina o Hni lw9t **")
