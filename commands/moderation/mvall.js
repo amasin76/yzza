@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
        if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return message.reply("**:x: I Dont Have Perms `MOVE_MEMBERS`**");
     if (message.member.voice.channel == null) return message.channel.send(`**You Have To Be In Room Voice**`)
      var author = message.member.voice.channelID;
-     var m = message.guild.members.filter(m=>m.voiceChannel)
+     var m = await message.guild.members.filter(m=>m.voiceChannel)
      message.guild.members.filter(m=>m.voiceChannel).forEach(m => {
      m.setVoiceChannel(author)
      })
