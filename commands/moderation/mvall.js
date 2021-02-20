@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
      var author = message.member.voice.channelID;
      var m = await message.guild.members.filter(m=>m.voiceChannel)
      message.guild.members.filter(m=>m.voiceChannel).forEach(m => {
-     m.setVoiceChannel(author)
+     await m.setVoiceChannel(author)
      })
      message.channel.send(`**:white_check_mark: Success Moved All To Your Channel**`)
 
