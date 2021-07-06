@@ -18,6 +18,7 @@ let universalColor = unicolor.toUpperCase()
 
 require("./handler/module.js")(client);
 require("./handler/Event.js")(client);
+require("./handler/antigrif.js")(client);
 
 client.package = require("./package.json");
 client.on("warn", console.warn); // This will warn you via logs if there was something wrong with your bot.
