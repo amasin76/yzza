@@ -1,14 +1,9 @@
-# Blob Development
-## Hello! Newcomers!
-Hey, this is an open source repo. So, **please don't copy paste the code and put it on your project just like that.** You need <br>
-to learn the system first, or **learn the Javascript first.** <br>
-<br>
-It's important to learn Javascript first. Slowly but sure.
-<br>
-## Tutorial - Season 2
+# Bio [ ITRI ]
+## Discord Custom Bot
+Hey, this is custom discord bot to manage our discord server and provide cool features to our community, Now the bot turned off 💔. i move to build another bot ( name: MO7MO7 ) support discord.js v13 u can check it in our discord server ( code source private )
 
-#### Our support server:
-https://discord.gg/CyH8avz
+#### Our discord server:
+[THE EPICS](https://discord.gg/CyH8avz)
 
 #### Copyright License:
 This project licensed under Apache License 2.0.
